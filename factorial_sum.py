@@ -18,7 +18,7 @@ def factorialSum(fact):
         #Find the sum of the digits
         finalSum = np.add(finalSum,digit)
         
-        fact = np.floor_divide(fact,10)
+        fact = fact//10
         
     return finalSum
     
