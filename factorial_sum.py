@@ -8,11 +8,27 @@
 import sys
 import numpy as np
 
+# Find the sum of each digit after performing the factorial
+def factorialSum(fact):
+    finalSum=0
+    while fact>0:
+    	#Find each digit
+        digit = np.mod(fact,10)
+
+        #Find the sum of the digits
+        finalSum = np.add(finalSum,digit)
+        
+        fact = np.floor_divide(fact,10)
+        
+    return finalSum
+    
 #Compute the factorial and sum
 def main(n):
     #Perform the factorial of the input	
     fact = np.math.factorial(n)
-    print(fact)
+    
+    #Display the result
+    print(factorialSum(fact))
        
    
 if __name__ == "__main__":
