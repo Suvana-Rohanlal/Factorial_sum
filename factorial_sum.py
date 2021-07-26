@@ -13,13 +13,10 @@ def factorialSum(fact):
     finalSum=0
     while fact>0:
     	#Find each digit
-        digit = np.mod(fact,10)
+        fact, digit = divmod(fact,10)
 
         #Find the sum of the digits
         finalSum = np.add(finalSum,digit)
-        
-        fact = fact//10
-        
     return finalSum
     
 #Compute the factorial and sum
