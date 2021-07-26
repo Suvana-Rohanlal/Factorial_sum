@@ -10,7 +10,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # copy all the files to the container
-COPY . .
+COPY src/ .
 
 # set entry point
 ENTRYPOINT ["python", "./factorial_sum.py"]
