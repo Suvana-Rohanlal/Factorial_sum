@@ -9,8 +9,8 @@ COPY requirements.txt .
 # install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# define the port number the container should expose
+# copy all the files to the container
 COPY . .
 
-# run the command
-CMD ["python", "./app.py"]
+# set entry point
+ENTRYPOINT ["python", "./factorial_sum.py"]
