@@ -5,15 +5,21 @@ This is a python implementation of the sum of the digits after performing a fact
  
 ## Table of Contents:
 	1. Files
-	2. Usage
-	3. Results
-	4. Credits
+	2. Explantion
+	3. Usage
+	4. Results
+	5. Credits
 
 ## Files:
 	1. src/factorial_sum.py - python file containing the computation of the factorial and sum of digits.
 	2. Dockerfile - Used to create the docker container
 	3. requirements.txt - contains the dependicies required for installation 
 
+## Explanation
+	For factorial, n! means n x (n-1) X (n-2) ... 3 x 2 x 1
+	For example, 10! = 10 x 9 x 8 ... x 3 x 2 x 1 = 3628800
+	Finding the sum of all the digits for 10! is 3 + 6 + 2 + 8 + 8 + 0 + 0 = 27.
+	
 ## Usage:
 	1. Build the file using the following command:
 		docker build -t factorial_sum .
@@ -33,4 +39,4 @@ This is a python implementation of the sum of the digits after performing a fact
 ## License :
 	MIT
 
-### Credits: Done by Suvana Rohanlal - 26/07/2021
+##### Credits: Done by Suvana Rohanlal - 26/07/2021
