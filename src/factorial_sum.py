@@ -6,6 +6,7 @@
 
 #Imports
 import sys
+import optparse
 import numpy as np
 
 # Find the sum of each digit after performing the factorial
@@ -31,12 +32,14 @@ def main(n):
 if __name__ == "__main__":
     try:
     	#Extract the input argument
-        userInput = int(sys.argv[1])
-        
-        #Check if the input is valid
-        if userInput < 0:
+    	parser = optparse.OptionParser()
+    	parser.add_option('-n',dest='num',type='int', help='Input the number that you want to use to find the sum of the digits after factorial')
+    	(options, args) = parser.parse_args()
+
+    	#Check if the input is valid
+    	if options.num < 0:
             print("Number must be postive")
-        else:
-            main(userInput)
+    	else:
+            main(options.num)
     except Exception as e:            
         print(e)
