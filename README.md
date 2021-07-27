@@ -28,13 +28,18 @@ This is a python implementation of the sum of the digits after performing a fact
 		docker build -t factorial_sum .
 	
 	3. Run the file using the following command:
-		docker run --rm factorial_sum 10
+		docker run --rm factorial_sum -n10
 
 	If permission is denied use:
 	sudo docker build -t factorial_sum .
-	sudo docker run --rm factorial_sum 10
-
-	The number at the end (10) can be changed to any that you would like to test.
+	sudo docker run --rm factorial_sum -n10
+	
+	4. "docker run --rm factorial_sum -h" allows you to check what arguments are required. 
+	
+	Arguments:
+	The number at the end (10) is an argument and can be changed to any number that you would like to test.
+	The argument is set as follows: 
+	-n followed by the number. Example, -n100 will find the factorial sum of 100 
 
 ## Results:
 	1. The result will be displayed in the command line after running the file. 
