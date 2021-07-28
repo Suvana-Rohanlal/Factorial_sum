@@ -21,13 +21,16 @@ This is a python implementation of the sum of the digits after performing a fact
 	Finding the sum of all the digits for 10! is 3 + 6 + 2 + 8 + 8 + 0 + 0 = 27.
 	
 ## Usage:
-	1. Navigate into the project folder using the following command:
+	1. Clone the repo using the following command:
+		git clone https://github.com/Suvana-Rohanlal/Factorial_sum.git
+		
+	2. Navigate into the project folder using the following command:
 		cd Factorial_sum
 		
-	2. Build the file using the following command:
+	3. Build the file using the following command:
 		docker build -t factorial_sum .
 	
-	3. Run the file using the following command:
+	4. Run the file using the following command:
 		docker run --rm factorial_sum -n10
 
 	If permission is denied use:
